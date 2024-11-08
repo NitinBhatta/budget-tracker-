@@ -3,13 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=\, initial-scale=1.0" />
-    <title>budegt tracker</title>
+    <title>budget tracker</title>
     <link rel="stylesheet" href="style.css" />
     <script src="app.js"></script>
   </head>
   <body>
-    <div class="bud">
-      <p>nitin bhatta</p>
+    <div class="container">
+      <h1>Monthly Budget Calculator</h1>
+
+      <div class="input-section">
+        <label for="income">Monthly Income:</label>
+        <input
+          type="number"
+          id="income"
+          class="input-field"
+          placeholder="Enter your income"
+        />
+
+        <label for="rent">Rent:</label>
+        <input
+          type="number"
+          id="rent"
+          class="input-field"
+          placeholder="Enter rent expense"
+        />
+
+        <label for="food">Food:</label>
+        <input
+          type="number"
+          id="food"
+          class="input-field"
+          placeholder="Enter food expense"
+        />
+
+        <label for="transportation">Transportation:</label>
+        <input
+          type="number"
+          id="transportation"
+          class="input-field"
+          placeholder="Enter transportation expense"
+        />
+      </div>
+      <div class="button-container">
+        <button id="calculate" class="button">Calculate Budget</button>
+      </div>
+
+      <div class="output-section">
+        <h2>Remaining Balance</h2>
+        <p id="balance" class="balance-display">
+          Your balance will be displayed here.
+        </p>
+      </div>
     </div>
   </body>
 </html>
